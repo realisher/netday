@@ -11,23 +11,23 @@ function Partners() {
             <div className='cards__wrapper'>
                 <ul className='cards__items'>
                     <Item
-                    src="images/part78.jpg"
+                    src="images/part1.jpg"
 
                     />
                     <Item
-                    src="images/part11.png"
+                    src="images/part2.png"
                     
                     />
                     <Item
-                    src="images/part77.png"
+                    src="images/part3.png"
                     
                     />
                     <Item
-                    src="images/part44.png"
+                    src="images/part4.png"
                     
                     />
                     <Item
-                    src="images/part32.jpg"
+                    src="images/part5.jpg"
                    
                     />
                    
