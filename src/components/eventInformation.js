@@ -28,7 +28,7 @@ class EventInformation extends React.Component {
                     <div className="flex flex-col justify-center text-center my-4">
                         <div className="text-[#38D9BA]">
                             <div className="font-bold md:text-3xl text-xl">26</div>
-                            <div>sat</div>
+                            <div className="md:text-xl text-sm">sat</div>
                         </div>
                         <div className="text-white md:text-[18px] text-10 py-4 font-bold text-center">SECOND TOUR</div>
                         <div className="text-white md:text-[18px] text-10 text-center">
@@ -39,7 +39,7 @@ class EventInformation extends React.Component {
                     <div className="flex flex-col justify-center text-center my-4">
                         <div className="text-[#38D9BA]">
                             <div className="font-bold md:text-3xl text-xl">27</div>
-                            <div>sun</div>
+                            <div className="md:text-xl text-sm">sun</div>
                         </div>
                         <div className="text-white md:text-[18px] text-10 py-4 font-bold text-center">THIRD TOUR</div>
                         <div className="text-white md:text-[18px] text-10 text-center">
