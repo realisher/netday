@@ -47,11 +47,11 @@ class RegistrationForm extends React.Component {
         return (
             <div style={{backgroundColor: "#1E1E1E"}} className="flex flex-col justify-center">
                 <div>
-                    <div className="text-white md:text-[40px] text-10 pt-10 font-bold text-center">
+                    <div className="text-white md:text-2xl text-10 pt-10 pb-5 font-bold text-center tracking-widest">
                         REGISTRATION FORM
                     </div>
                     <div className="flex justify-center">
-                        <img src={line} alt="hr-line" className="w-1/3"/>
+                        <img src={line} alt="hr-line" className="w-1/5"/>
                     </div>
                 </div>
 
