@@ -49,7 +49,7 @@ function Navbar() {
             </HashLink>
           </li>
           <li className='nav-item'>
-            <HashLink to='/courses'  className='nav-links' spy={true} smooth={true} offset={-100} duration={500} onClick={closeMobileMenu}>
+            <HashLink to='/#info'  className='nav-links' spy={true} smooth={true} offset={-100} duration={500} onClick={closeMobileMenu}>
               Schedule
             </HashLink>
           </li>
@@ -73,7 +73,7 @@ function Navbar() {
             </HashLink>
           </li>
           <li className='nav-item'>
-            <HashLink to='/signup' className='nav-links-mobile' onClick={closeMobileMenu}>
+            <HashLink to='/#registr' className='nav-links-mobile' onClick={closeMobileMenu}>
               Register
             </HashLink>
           </li>
