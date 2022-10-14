@@ -45,25 +45,25 @@ class RegistrationForm extends React.Component {
 
     render() {
         return (
-            <div style={{backgroundColor: "#1E1E1E"}} className="flex flex-col justify-center">
+            <div id="registr" className="flex flex-col justify-center">
                 <div>
-                    <div className="text-white md:text-2xl text-10 pt-10 pb-5 font-bold text-center tracking-widest">
+                    <div className="text-white md:text-2xl text-10 pt-10 pb-5 text-center tracking-widest title">
                         REGISTRATION FORM
                     </div>
                     <div className="flex justify-center">
-                        <img src={line} alt="hr-line" className="w-1/5"/>
+                        <img src={line} alt="hr-line" className="w-1/2"/>
                     </div>
                 </div>
 
-                <div className="flex md:flex-row flex-col md:justify-around justify-center items-center mx-auto my-14">
+                <div className="flex md:flex-row flex-col md:justify-around justify-center items-center m-60 my-14">
                     <div>
                         <div className="text-white md:text-4xl mb-10 text-xl font-semibold text-[#38D9BA]">
                             <p>TEST YOURSEL !</p>
-                            <p>MULTIPLY KNOWLEDGE !</p>
+                            <p className='my-2'>MULTIPLY KNOWLEDGE !</p>
                             <p>TRY YOUR LUCK !</p>
                         </div>
                     </div>
-                    <div className="outline-2 outline-[#38D9BA] outline px-10 py-14 md:w-1/2 text-center">
+                    <div className="outline-2 outline-[#38D9BA] outline px-20 py-16 md:w-1/2 mx-12 text-center">
                         <form onSubmit={this.handleSubmit} className="flex flex-col">
                             <input type="text" name="userName" placeholder="Name" onChange={this.handleInputChange} />
                             <input type="text" name="surname" placeholder="Surname" onChange={this.handleInputChange}/>
@@ -75,7 +75,7 @@ class RegistrationForm extends React.Component {
                             <input type="text" name="university" placeholder="University" onChange={this.handleInputChange}/>
                             <input type="text" name="major" placeholder="Major" onChange={this.handleInputChange}/>
                             <input type="text" name="course" placeholder="Course" onChange={this.handleInputChange}/>
-                            <input className="outline-2 rounded-2xl mt-4" type="submit" value="Submit"/>
+                            <input className="outline-2 rounded-2xl mt-16 cursor-pointer" type="submit" value="Submit"/>
                         </form>
                     </div>
                 </div>

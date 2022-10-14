@@ -1,13 +1,19 @@
+import React from 'react';
+import Navbar from './components/Navbar';
 import './App.css';
-import RegistrationForm from "./components/registrationForm";
-import EventInformation from "./components/eventInformation";
+import Home from './components/pages/Home.js';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-      <div>
-          <EventInformation/>
-          <RegistrationForm />
-      </div>
+    <>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path='/'element={<Home />} />
+        </Routes>
+      </Router>
+    </>
   );
 }
 
