@@ -14,10 +14,19 @@
 
 .title {
   font-size: 2.5rem;
-    padding-top: 100px;
-    text-align: center;
-    color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-bottom: 1rem;
-    letter-spacing: 2vh;
+  padding-top: 100px;
+  padding-right: 4rem;
+  padding-left: 4rem;
+  text-align: center;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-bottom: 1rem;
+  letter-spacing: 2vh;
+}
+
+@media only screen and (max-width: 1024px) {
+  .title{
+    letter-spacing: 0;
+
+  }
 }
