@@ -10,6 +10,10 @@ body {
   background-color: #000910;
 }
 
+img{
+  max-width: 1000px;
+}
+
 input {
   background-color: transparent;
   color: white;
