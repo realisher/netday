@@ -8,7 +8,7 @@ function About() {
     <>
     <div id="about" className='mainSection'>
         <div className='contentBox'>
-            <h1 >Networking Day</h1>
+            <h1 >NETWORKING DAY</h1>
             <p>SDU is inviting young talents with an interest 
                 in Computer Networking, Network Security, to participate in an 
                 epic battle for the title of best Networking Talent of 2022. There will be an 
@@ -16,7 +16,7 @@ function About() {
                 cool experience and new acquaintances and valuable prizes as a bonus</p>
         </div>
         <div className='imgContainer'>
-        <img src="images/comp.jpg" alt='netday'/> 
+        <img src="images/vas.png" alt='netday'/> 
         </div>
     </div>
     </>
