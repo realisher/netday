@@ -7,7 +7,8 @@ import line from '../assets/images/hr-line.png'
 
 function Partners() {
   return (
-    <div id="partners" className='partners'>
+    <div id="partners">
+    <div  className='partners'>
        <h1 >PARTNERS</h1>
        <div className="flex justify-center">
                         <img src={line} alt="hr-line" className="md:w-1/3 mb-10"/>
@@ -41,6 +42,7 @@ function Partners() {
                 
             </div>
         </div>
+    </div>
     </div>
   );
 }

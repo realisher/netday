@@ -21,7 +21,7 @@
   }
   
   .hero-container > p {
-    margin-top: 8px;
+    margin-top: 10px;
     color: #fff;
     font-size: 32px;
     margin-bottom: 32px;
@@ -55,13 +55,13 @@
   
   @media screen and (max-width: 768px) {
     .hero-container > h1 {
-      font-size: 25px;
+      font-size: 30px;
       justify-content: center;
-      margin-top: -300px;
+      margin-top: -700px;
     }
   
     .hero-container > p {
-      font-size: 30px;
+      font-size: 25px;
     }
   
     .btn-mobile {

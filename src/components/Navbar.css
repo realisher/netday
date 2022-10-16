@@ -103,8 +103,9 @@
       display: flex;
       flex-direction: column;
       width: 100%;
-      height: 110vh;
+      height: 91vh;
       position: absolute;
+      grid-gap: 0px;
       top: 80px;
       left: -100%;
       opacity: 1;
@@ -125,6 +126,7 @@
       width: 100%;
       display: table;
       margin-top: 0;
+      font-size: 18px;
     }
   
     .nav-links:hover {
@@ -135,7 +137,7 @@
   
     .navbar-logo {
       position: absolute;
-      top: 1rem;
+      top: 1.7rem;
       margin-bottom: 1rem;
       left: 0;
       transform: translate(25%, 50%);

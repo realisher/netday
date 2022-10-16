@@ -1,6 +1,7 @@
-import React from 'react';
+
+import React, {useState, useEffect} from 'react'
 import './Button.css';
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link'
 
 const STYLES = ['btn--primary', 'btn--outline', 'btn--white'];
 
@@ -19,8 +20,31 @@ export const Button = ({
 
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
+  const [click, setClick] = useState(false);
+
+  const [button, setButton] = useState(true)
+
+  const handleClick = () => setClick(!click);
+
+  const closeMobileMenu = () => setClick(false);
+
+  const showButton = () => {
+    if(window.innerWidth<=960){
+      setButton(false)
+    } else{
+      setButton(true)
+    }
+  };
+
+  useEffect(() => {
+    showButton();
+  },[]);
+
   return (
-    <Link to='/sign-up' className='btn-mobile'>
+    <HashLink to='/#registration' smooth={true}
+              duration={500}
+              spy={true}
+              offset={-80}  className='btn-mobile' onClick={closeMobileMenu}>
       <button
         className={`btn ${checkButtonStyle} ${checkButtonSize}`}
         onClick={onClick}
@@ -28,6 +52,6 @@ export const Button = ({
       >
         {children}
       </button>
-    </Link>
+     </HashLink>
   );
 };
