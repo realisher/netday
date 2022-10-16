@@ -7,13 +7,13 @@ class EventInformation extends React.Component {
         return (
             <div id="info" className="bgimage">
                 <div>
-                    <div className="text-white md:text-2xl tracking-widest text-10 pt-10 text-center title">EVENT INFORMATION</div>
+                    <div className="text-white md:text-2xl tracking-widest text-10 md:pt-10 text-center title">EVENT INFORMATION</div>
                     <div className="flex justify-center">
-                        <img src={line} alt="hr-line" className="w-1/3 my-4"/>
+                        <img src={line} alt="hr-line" className="md:w-1/3 my-4"/>
                     </div>
                     <div className="md:text-3xl text-xl font-bold text-center text-[#38D9BA]">NOVEMBER 2022</div>
                 </div>
-                <div className="flex md:flex-row flex-col md:justify-around justify-center p-20">
+                <div className="flex md:flex-row flex-col md:justify-around justify-center p-5 md:p-20">
                     <div className="flex flex-col justify-center text-center my-4">
                         <div className="text-[#38D9BA]">
                             <div className="font-bold md:text-3xl text-xl">12</div>

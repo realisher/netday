@@ -47,15 +47,15 @@ class RegistrationForm extends React.Component {
         return (
             <div id="registr" className="flex flex-col justify-center">
                 <div>
-                    <div className="text-white md:text-2xl text-10 pt-10 pb-5 text-center tracking-widest title">
+                    <div className="text-white md:text-2xl text-10 pt-10 md:pb-5 text-center tracking-widest title">
                         REGISTRATION FORM
                     </div>
                     <div className="flex justify-center">
-                        <img src={line} alt="hr-line" className="w-1/2"/>
+                        <img src={line} alt="hr-line" className="md:w-1/2"/>
                     </div>
                 </div>
 
-                <div className="flex md:flex-row flex-col md:justify-around justify-center items-center m-60 my-14">
+                <div className="flex md:flex-row flex-col md:justify-around justify-center items-center md:m-60 my-14">
                     <div>
                         <div className="text-white md:text-4xl mb-10 text-xl font-semibold text-[#38D9BA]">
                             <p>TEST YOURSEL !</p>
@@ -63,7 +63,7 @@ class RegistrationForm extends React.Component {
                             <p>TRY YOUR LUCK !</p>
                         </div>
                     </div>
-                    <div className="outline-2 outline-[#38D9BA] outline px-20 py-16 md:w-1/2 mx-12 text-center">
+                    <div className="outline-2 outline-[#38D9BA] outline px-10 py-16 md:w-[40%] md:mx-12 text-center">
                         <form onSubmit={this.handleSubmit} className="flex flex-col">
                             <input type="text" name="userName" placeholder="Name" onChange={this.handleInputChange} />
                             <input type="text" name="surname" placeholder="Surname" onChange={this.handleInputChange}/>

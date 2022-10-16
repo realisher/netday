@@ -10,7 +10,7 @@ function Awards() {
     <div id="awards" className='awardSection'>
     <h1>AWARDS</h1>
     <div className="flex justify-center">
-                        <img src={line} alt="hr-line" className="w-1/3 mb-4"/>
+                        <img src={line} alt="hr-line" className="md:w-1/3 mb-4"/>
                     </div>
             <div className='imgAward'>
         <img className='imgo' src="images/awards.png" alt='netday' /> 
