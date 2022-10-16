@@ -30,8 +30,7 @@ function Navbar() {
     <>
     <nav className='navbar'>
       <div className='navbar-container'>
-        <HashLink to="#top" className='navbar-logo' activeClassName="selected"
-  activeStyle={{ color: 'red' }} smooth={true} offset={500} duration={500} onClick={closeMobileMenu}>
+        <HashLink to="#top" className='navbar-logo' spy={true} smooth={true} offset={500} duration={500} onClick={closeMobileMenu}>
         <img src="images/logo.png" alt='netday'/> 
         </HashLink>
         <div className='menu-icon' onClick={handleClick}>
