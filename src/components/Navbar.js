@@ -24,6 +24,18 @@ function Navbar() {
     showButton();
   },[]);
 
+  const scrollWithOffsetPartners = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -250; 
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
+}
+
+const scrollWithOffsetSchedule= (el) => {
+  const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+  const yOffset = -80; 
+  window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
+}
+
   window.addEventListener('resize', showButton);
 
   return (
@@ -48,7 +60,7 @@ function Navbar() {
             </HashLink>
           </li>
           <li className='nav-item'>
-            <HashLink to='/#info'  className='nav-links' spy={true} smooth={true} offset={-100} duration={500} onClick={closeMobileMenu}>
+            <HashLink to='/#info'  className='nav-links' scroll={el => scrollWithOffsetSchedule(el)} onClick={closeMobileMenu}>
               Schedule
             </HashLink>
           </li>
@@ -62,12 +74,16 @@ function Navbar() {
               smooth={true}
               duration={500}
               spy={true}
-              offset={-80}  className='nav-links' onClick={closeMobileMenu}>
+              scroll={el => scrollWithOffsetPartners(el)}
+               className='nav-links' onClick={closeMobileMenu}>
               Partners
             </HashLink>
           </li>
           <li className='nav-item'>
-            <HashLink to='/contacts' className='nav-links' onClick={closeMobileMenu}>
+            <HashLink to='/#contacts' smooth={true}
+              duration={500}
+              spy={true}
+              offset={-80}  className='nav-links' onClick={closeMobileMenu}>
               Contacts
             </HashLink>
           </li>
@@ -85,4 +101,4 @@ function Navbar() {
   )
 }
 
-export default Navbar
+export default Navbar;

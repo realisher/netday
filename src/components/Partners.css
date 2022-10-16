@@ -73,11 +73,10 @@
    
   }
   
-  .cards__item__img:hover {
+  /*.cards__item__img:hover {
     transform: scale(1.1);
   }
-
- 
+ */
   
   @media only screen and (min-width: 1200px) {
    

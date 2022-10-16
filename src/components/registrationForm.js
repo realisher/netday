@@ -45,7 +45,7 @@ class RegistrationForm extends React.Component {
 
     render() {
         return (
-            <div id="registr" className="flex flex-col justify-center">
+            <div id="registration" className="flex flex-col justify-center">
                 <div>
                     <div className="text-white md:text-2xl text-10 pt-10 md:pb-5 text-center tracking-widest title">
                         REGISTRATION FORM
