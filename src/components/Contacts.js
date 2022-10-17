@@ -14,7 +14,7 @@ class Contacts extends React.Component {
                         className="text-white md:text-2xl tracking-widest text-10 md:pt-10 text-center title">CONTACTS
                     </div>
                     <div className="flex justify-center">
-                        <img src={line} alt="hr-line" className="md:w-1/3 my-4"/>
+                        <img src={line} alt="hr-line" className="w-[90%] md:w-1/3 my-4"/>
                     </div>
                 </div>
                 <div className={'flex justify-center items-center flex-col md:flex-row md:mt-8 mb-32'}>
