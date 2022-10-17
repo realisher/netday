@@ -24,6 +24,12 @@ function Navbar() {
     showButton();
   },[]);
 
+  const scrollWithOffsetAbout= (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -90; 
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
+  }
+
   const scrollWithOffsetPartners = (el) => {
     const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
     const yOffset = -250; 
@@ -32,7 +38,12 @@ function Navbar() {
 
 const scrollWithOffsetSchedule= (el) => {
   const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-  const yOffset = -120; 
+  const yOffset = -170; 
+  window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
+}
+const scrollWithOffsetAwards= (el) => {
+  const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+  const yOffset = -100; 
   window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
 }
 
@@ -58,11 +69,7 @@ const scrollWithOffsetSchedule= (el) => {
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
           <li className='nav-item'>
           <HashLink  to="/#about"
-              smooth={true}
-              duration={500}
-              spy={true}
-              exact="true"
-              offset={-80}  className='nav-links' onClick={closeMobileMenu}>
+             scroll={el => scrollWithOffsetAbout(el)}  className='nav-links' onClick={closeMobileMenu}>
               What is?
             </HashLink>
           </li>
@@ -72,7 +79,7 @@ const scrollWithOffsetSchedule= (el) => {
             </HashLink>
           </li>
           <li className='nav-item'>
-            <HashLink to='/#awards' className='nav-links' spy={true} smooth={true} offset={-100} duration={500} onClick={closeMobileMenu}>
+            <HashLink to='/#awards' className='nav-links' scroll={el => scrollWithOffsetAwards(el)} onClick={closeMobileMenu}>
               Awards
             </HashLink>
           </li>
