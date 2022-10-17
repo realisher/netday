@@ -51,11 +51,11 @@ class RegistrationForm extends React.Component {
                         REGISTRATION FORM
                     </div>
                     <div className="flex justify-center">
-                        <img src={line} alt="hr-line" className="md:w-1/2"/>
+                        <img src={line} alt="hr-line" className="w-[90%] md:w-1/2"/>
                     </div>
                 </div>
 
-                <div className="flex md:flex-row flex-col md:justify-around justify-center items-center md:m-60 my-14">
+                <div className="flex md:flex-row flex-col md:justify-around justify-center items-center md:mx-60 my-14">
                     <div>
                         <div className="text-white md:text-4xl mb-10 text-xl font-semibold text-[#38D9BA]">
                             <p>TEST YOURSEL !</p>
