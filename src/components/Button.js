@@ -27,6 +27,12 @@ export const Button = ({
   const handleClick = () => setClick(!click);
 
   const closeMobileMenu = () => setClick(false);
+  
+  const scrollWithOffsetReg= (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -85; 
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
+  }
 
   const showButton = () => {
     if(window.innerWidth<=960){
@@ -42,9 +48,7 @@ export const Button = ({
 
   return (
     <HashLink to='/#registration' smooth={true}
-              duration={500}
-              spy={true}
-              offset={-80}  className='btn-mobile' onClick={closeMobileMenu}>
+    scroll={el => scrollWithOffsetReg(el)}  className='btn-mobile' onClick={closeMobileMenu}>
       <button
         className={`btn ${checkButtonStyle} ${checkButtonSize}`}
         onClick={onClick}
