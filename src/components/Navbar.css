@@ -31,18 +31,12 @@
 
   
   .navbar-logo {
-    color: #fff;
+    
     justify-self: start;
-    margin-right: 37px;
-
-    cursor: pointer;
     text-decoration: none;
-    font-size: 2rem;
     display: flex;
     align-items: center;
-    letter-spacing: 5px;
-    height: 18.68px;
-    width: 102.87px;
+    height: 48.68px;
   }
   
  
@@ -55,6 +49,7 @@
     text-align: center;
     width: 60vw;
     justify-content: center;
+    margin-right: 55px;
   }
   
   .nav-item {
@@ -137,9 +132,8 @@
   
     .navbar-logo {
       position: absolute;
-      top: 1.7rem;
-      margin-bottom: 1rem;
-      left: 0;
+      top: -0.25rem;
+      left: -1rem;
       transform: translate(25%, 50%);
     }
   

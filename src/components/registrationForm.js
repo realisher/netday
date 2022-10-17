@@ -58,7 +58,7 @@ class RegistrationForm extends React.Component {
                 <div className="flex md:flex-row flex-col md:justify-around justify-center items-center md:mx-60 my-14">
                     <div>
                         <div className="text-white md:text-4xl mb-10 text-xl font-semibold text-[#38D9BA]">
-                            <p>TEST YOURSEL !</p>
+                            <p>TEST YOURSELF !</p>
                             <p className='my-2'>MULTIPLY KNOWLEDGE !</p>
                             <p>TRY YOUR LUCK !</p>
                         </div>
