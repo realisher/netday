@@ -6,7 +6,7 @@ import './About.css';
 function About() {
   return (
     <>
-    <div id="about" className='mainSection'>
+    <div data-aos="fade-up" id="about" className='mainSection'>
         <div className='contentBox'>
             <h1 >NETWORKING DAY</h1>
             <p>SDU is inviting young talents with an interest 

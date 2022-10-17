@@ -7,7 +7,7 @@ import line from '../assets/images/hr-line.png'
 
 function Partners() {
   return (
-    <div id="partners">
+    <div data-aos="fade-up" id="partners">
     <div  className='partners'>
        <h1 >PARTNERS</h1>
        <div className="flex justify-center">

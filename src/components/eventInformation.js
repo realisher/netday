@@ -5,7 +5,7 @@ import line from "../assets/images/hr-line.png";
 class EventInformation extends React.Component {
     render() {
         return (
-            <div id="info" className="bgimage">
+            <div data-aos="fade-up" id="info" className="bgimage">
                 <div>
                     <div className="text-white md:text-2xl tracking-widest text-10 md:pt-10 text-center title">EVENT INFORMATION</div>
                     <div className="flex justify-center">

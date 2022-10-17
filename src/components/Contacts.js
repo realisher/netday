@@ -8,7 +8,7 @@ import './Contacts.css';
 class Contacts extends React.Component {
     render() {
         return (
-            <div id="contacts">
+            <div data-aos="fade-up" id="contacts">
                 <div>
                     <div
                         className="text-white md:text-2xl tracking-widest text-10 md:pt-10 text-center title">CONTACTS
