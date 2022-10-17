@@ -39,7 +39,7 @@ class Contacts extends React.Component {
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11632.333264440063!2d76.6690542!3d43.2077418!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7b7d14aec270c056!2z0KPQvdC40LLQtdGA0YHQuNGC0LXRgiDQodGD0LvQtdC50LzQsNC9INCU0LXQvNC40YDQtdC70Y8!5e0!3m2!1sru!2skz!4v1665748884123!5m2!1sru!2skz"></iframe>
                     </div>
                 </div>
-                <div className={'end-word my-14'}>2022 NETWORKING DAY</div>
+                <div className={'end-word my-8'}>2022 NETWORKING DAY</div>
             </div>
         )
     }

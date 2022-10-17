@@ -46,6 +46,11 @@ const scrollWithOffsetAwards= (el) => {
   const yOffset = -100; 
   window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
 }
+const scrollWithOffsetCont= (el) => {
+  const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+  const yOffset = -80; 
+  window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
+}
 
   window.addEventListener('resize', showButton);
 
@@ -85,19 +90,13 @@ const scrollWithOffsetAwards= (el) => {
           </li>
           <li className='nav-item'>
             <HashLink  to="/#partners"
-              smooth={true}
-              duration={500}
-              spy={true}
               scroll={el => scrollWithOffsetPartners(el)}
                className='nav-links' onClick={closeMobileMenu}>
               Partners
             </HashLink>
           </li>
           <li className='nav-item'>
-            <HashLink to='/#contacts' smooth={true}
-              duration={500}
-              spy={true}
-              offset={-80}  className='nav-links' onClick={closeMobileMenu}>
+            <HashLink to='/#contacts' scroll={el => scrollWithOffsetCont(el)} className='nav-links' onClick={closeMobileMenu}>
               Contacts
             </HashLink>
           </li>

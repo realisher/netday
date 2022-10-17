@@ -52,6 +52,7 @@
     .mainSection{
         font-size: 15px;
         flex-direction: column;
+        height: 135vh;
        
     }
     .contentBox{
@@ -59,10 +60,11 @@
         margin: 0 auto;
     }
     .contentBox h1{
-        font-size: 2rem;
+        font-size: 2.5rem;
         padding-left: 0;
         letter-spacing: 0ch;
         padding-right: 70px;
+        
         
     }
     .contentBox p{
