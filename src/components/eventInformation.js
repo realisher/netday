@@ -1,48 +1,50 @@
 import React from 'react';
 import line from "../assets/images/hr-line.png";
 
+import './EventInformation.css';
+
 
 class EventInformation extends React.Component {
     render() {
         return (
-            <div data-aos="fade-up" id="info" className="bgimage">
+            <div id="info" className="bgimage m-top">
                 <div>
-                    <div className="text-white md:text-2xl tracking-widest text-10 md:pt-10 text-center title">EVENT INFORMATION</div>
-                    <div className="flex justify-center">
-                        <img src={line} alt="hr-line" className="w-[90%] md:w-1/3 my-4"/>
+                    <div className="title">EVENT INFORMATION</div>
+                    <div className="center">
+                        <img src={line} alt="hr-line" className="underline"/>
                     </div>
-                    <div className="md:text-3xl text-xl font-bold text-center text-[#38D9BA]">NOVEMBER 2022</div>
+                    <div className="sub-title flex-center">NOVEMBER 2022</div>
                 </div>
-                <div className="flex md:flex-row flex-col md:justify-around justify-center p-5 md:p-20">
-                    <div className="flex flex-col justify-center text-center my-4">
-                        <div className="text-[#38D9BA]">
-                            <div className="font-bold md:text-3xl text-xl">12</div>
-                            <div className="md:text-xl text-sm">sat</div>
+                <div className="main-div ">
+                    <div className="flex-center">
+                        <div className="text-color">
+                            <div className="num-font-big">12</div>
+                            <div className="num-font-mid">sat</div>
                         </div>
-                        <div className="text-white md:text-[18px] md:text-10 text-6 py-4 font-bold text-center">FIRST TOUR</div>
-                        <div className="text-white md:text-[18px] text-10 text-center">
+                        <div className="num-font-hug">FIRST TOUR</div>
+                        <div className="num-font-hug">
                             <div>ONLINE</div>
                             <div>TEST</div>
                         </div>
                     </div>
-                    <div className="flex flex-col justify-center text-center my-4">
-                        <div className="text-[#38D9BA]">
-                            <div className="font-bold md:text-3xl text-xl">26</div>
-                            <div className="md:text-xl text-sm">sat</div>
+                    <div className="flex-center mx-20px">
+                        <div className="text-color">
+                            <div className="num-font-big">26</div>
+                            <div className="num-font-mid">sat</div>
                         </div>
-                        <div className="text-white md:text-[18px] text-10 py-4 font-bold text-center">SECOND TOUR</div>
-                        <div className="text-white md:text-[18px] text-10 text-center">
+                        <div className="num-font-hug">SECOND TOUR</div>
+                        <div className="num-font-hug">
                             <div>OFFLINE</div>
                             <div>PACKET TRACER TASK</div>
                         </div>
                     </div>
-                    <div className="flex flex-col justify-center text-center my-4">
-                        <div className="text-[#38D9BA]">
-                            <div className="font-bold md:text-3xl text-xl">27</div>
-                            <div className="md:text-xl text-sm">sun</div>
+                    <div className="flex-center">
+                        <div className="text-color">
+                            <div className="num-font-big">27</div>
+                            <div className="num-font-mid">sun</div>
                         </div>
-                        <div className="text-white md:text-[18px] text-10 py-4 font-bold text-center">THIRD TOUR</div>
-                        <div className="text-white md:text-[18px] text-10 text-center">
+                        <div className="num-font-hug">THIRD TOUR</div>
+                        <div className="num-font-hug">
                             <div>OFFLINE</div>
                             <div>QUEST</div>
                         </div>
