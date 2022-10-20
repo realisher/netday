@@ -1,5 +1,7 @@
 import React from 'react';
-import line from '../assets/images/hr-line.png'
+import line from '../assets/images/hr-line.png';
+import './RegistrationForm.css';
+
 
 const countries = [
     { value: 'kz', label: 'Kazakhstan' },
@@ -45,26 +47,26 @@ class RegistrationForm extends React.Component {
 
     render() {
         return (
-            <div data-aos="fade-up" id="registration" className="flex flex-col justify-center">
+            <div id="registration" className="flex-center flex-column">
                 <div>
-                    <div className="text-white md:text-2xl text-10 pt-10 md:pb-5 text-center tracking-widest title">
+                    <div className="title">
                         REGISTRATION FORM
                     </div>
-                    <div className="flex justify-center">
-                        <img src={line} alt="hr-line" className="w-[90%] md:w-1/2"/>
+                    <div className="flex-center">
+                        <img src={line} alt="hr-line" className="underline"/>
                     </div>
                 </div>
 
-                <div className="flex md:flex-row flex-col md:justify-around justify-center items-center md:mx-60 my-14">
+                <div className="main-div my-20px">
                     <div>
-                        <div className="text-white md:text-4xl mb-10 text-xl font-semibold text-[#38D9BA]">
-                            <p>TEST YOURSELF !</p>
+                        <div className="sub-title">
+                            <p>TEST YOURSEL !</p>
                             <p className='my-2'>MULTIPLY KNOWLEDGE !</p>
                             <p>TRY YOUR LUCK !</p>
                         </div>
                     </div>
-                    <div className="outline-2 outline-[#38D9BA] outline px-10 py-16 md:w-[40%] md:mx-12 text-center">
-                        <form onSubmit={this.handleSubmit} className="flex flex-col">
+                    <div className="form-border">
+                        <form onSubmit={this.handleSubmit} className="flex-column">
                             <input type="text" name="userName" placeholder="Name" onChange={this.handleInputChange} />
                             <input type="text" name="surname" placeholder="Surname" onChange={this.handleInputChange}/>
                             <input type="text" name="email" placeholder="Email" onChange={this.handleInputChange}/>
@@ -75,7 +77,7 @@ class RegistrationForm extends React.Component {
                             <input type="text" name="university" placeholder="University" onChange={this.handleInputChange}/>
                             <input type="text" name="major" placeholder="Major" onChange={this.handleInputChange}/>
                             <input type="text" name="course" placeholder="Course" onChange={this.handleInputChange}/>
-                            <input className="outline-2 rounded-2xl mt-16 cursor-pointer" type="submit" value="Submit"/>
+                            <input className="form-button" type="submit" value="Submit"/>
                         </form>
                     </div>
                 </div>

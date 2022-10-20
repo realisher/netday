@@ -10,8 +10,8 @@ function Partners() {
     <div data-aos="fade-up" id="partners">
     <div  className='partners'>
        <h1 >PARTNERS</h1>
-       <div className="flex justify-center">
-                        <img src={line} alt="hr-line" className="w-[90%] md:w-1/3 mb-10"/>
+       <div className="flex-center">
+                        <img src={line} alt="hr-line" className="underline"/>
                     </div>
         <div className='cards__conteiner'>
             <div className='cards__wrapper'>
