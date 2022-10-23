@@ -30,7 +30,7 @@ export const Button = ({
   
   const scrollWithOffsetReg= (el) => {
     const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-    const yOffset = -85; 
+    const yOffset = -80; 
     window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
   }
 

@@ -28,7 +28,8 @@
   
   .cards__items {
     margin-bottom: 24px;
-    
+    margin-top: 50px;
+    padding: 0;
 
   }
   
@@ -88,12 +89,14 @@
   @media only screen and (min-width: 1024px) {
     .cards__items {
       display: flex;
+      padding: 0;
     }
   }
   
   @media only screen and (max-width: 1024px) {
     .cards__item {
       margin-bottom: 2rem;
+  
     }
     .partners h1{
         letter-spacing: 0;

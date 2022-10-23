@@ -7,8 +7,8 @@ function About() {
   return (
     <>
     <div data-aos="fade-up" id="about" className='mainSection'>
-        <div className='contentBox'>
-            <h1 >NETWORKING DAY</h1>
+        <div   className='contentBox'>
+            <h1 id="about">NETWORKING DAY</h1>
             <p>SDU is inviting young talents with an interest 
                 in Computer Networking, Network Security, to participate in an 
                 epic battle for the title of best Networking Talent of 2022. There will be an 
